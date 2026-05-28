@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello world <%=user.prenom+user.nom %></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laudantium quaerat magni dolorum neque distinctio cum praesentium quidem nam eius! Earum sequi harum atque consequatur aliquid sed est mollitia. Ad.</p>
+    <h1>Mes todos</h1>
+    <a href="/ajouter">Ajouter une tache</a>
+    <table>
+        <thead>
+        <tr>    
+          <th>Nom</th>
+          <th>deadline</th>
+          <th>priorite</th>
+          <th>Actions</th>  
+        </tr>    
+        
+        </thead>
+        <tbody>
+            <tr>
+                <td>faire le commit</td>
+                <td>27/05/26 à 13h</td>
+                <td>haute</td>
+                <td><a href="/modifier/">modifier</a>
+                    <a href="/modifier/">supprimer</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
 </body>
+
 </html>

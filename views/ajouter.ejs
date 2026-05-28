@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="/">retour</a>
+    <h1>Ajouter une todolist</h1>
+    <form action="/ajouter" method="POST">
+    <label for="nom">nom</label>
+    <input type="text" id="nom" name="nom">
+
+    <label for="deadline">deadline</label>
+    <input type="date" name="deadline" id="deadline">
+
+    <label for="priorite">priorité</label>
+    <select name="priorite" id="priorite">
+        <option value="1">haute</option>
+        <option value="2">moyenne</option>
+        <option value="3">basse</option>
+    </select>
+
+    <input type="submit" name="Enregistrer">
+
+
+    </form>
+</body>
+</html>
